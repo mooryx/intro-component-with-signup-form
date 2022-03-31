@@ -17,6 +17,8 @@
 </head>
 
 <body>
+  <img src="images/bg-intro-desktop.png" class="bg-img desktop" alt="">
+  <img  src="images/bg-intro-mobile.png" class="bg-img mobile" alt="">
   <div class="main">
 
 
@@ -29,24 +31,30 @@
 </div>
 <div class="form-container">
   <div class="form-header">
-    <h4><em>Try it free 7 days</em> then $20/mo. thereafter</h4>
+    <h5><em>Try it free 7 days</em> then $20/mo. thereafter</h5>
 
   </div>
 
 
 <div class="form">
-
-
-
     <form class="" action="index.html" method="post">
-      <input type="text" name="fname" value="" placeholder="First Name">
-      <input type="text" name="lname" value="" placeholder="Last Name">
-      <input type="email" name="email" value="" placeholder="Email Address">
-      <input type="text" name="pass" value=""  placeholder="Password">
-      <input type="submit" name="submit" value="Claim your free trial">
+      <input type="text"class="" name="fname" value="" placeholder="First Name">
+      <p  class="error ">First Name Cannot be Empty</p>
+
+      <input type="text"  class=""name="lname" value="" placeholder="Last Name">
+      <p class="error" >Last Name Cannot be Empty</p
+        >
+      <input type="email" class="" name="email" value="" placeholder="Email Address">
+      <p  class="error" >Invalid Email</p>
+
+      <input type="text"class="" name="pass" value=""  placeholder="Password">
+      <p  class="error" >Password Cannot be Empty</p>
+
+      <input type="submit"class="" name="submit" value="CLAIM YOUR FREE TRIAL">
+
     </form>
 
-  <p>By clicking the button, you are agreeing to our </p>
+  <p class="terms">By clicking the button, you are agreeing to our </p>
   <p><a href="">Terms and Services</a></p>
   </div>
   </div>

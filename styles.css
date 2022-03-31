@@ -1,90 +1,147 @@
-body{
+body {
   background-color: hsl(0, 100%, 74%);
   color: white;
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
-
-
 }
-h1{
- font-weight: 700;
+
+.bg-img {
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: -2;
 }
+
+.mobile {
+  display: none;
+}
+
+h1 {
+  font-weight: 700;
+}
+
 .attribution {
   text-align: center;
 }
-h4{
+
+h5 {
   padding: 10px 0;
+  font-weight: 100;
 }
-.main{
+
+em {
+  font-weight: 700;
+}
+
+.main {
   margin-top: 100px;
   display: flex;
   justify-content: space-evenly;
 }
-.description{
-  width: 30rem;
-margin:auto 0;
+
+.description {
+  width: 50%;
+  margin: auto 0;
+  line-height: 2;
 }
-.form p {
+
+.terms {
   color: hsl(246, 25%, 77%);
   font-weight: lighter;
   font-size: 0.1rem;
 }
 
-
-.form{
-  width :100%;
+.form {
+  width: 100%;
   background-color: white;
   border-radius: 5px;
   text-align: center;
-  box-shadow: 0 6px  #888888;
-
+  box-shadow: 0 6px rgba(62, 60, 73, 0.3);
+  padding: 10px 0;
 }
-.form-container{
-  width: 30%;
-}
-.form-header{
 
+.form-container {
+  width: 35%;
+}
+
+.form-header {
   margin-bottom: 20px;
   background-color: hsl(248, 32%, 49%);
   width: 100%;
-
   border-radius: 6px;
   text-align: center;
-  box-shadow: 0 6px  #888888;
+  box-shadow: 0 6px rgba(62, 60, 73, 0.3);
 }
-input{
+
+input {
   width: 90%;
   padding: 12px 20px;
-  margin: 8px 0;
+  margin-top: 8px;
   display: inline-block;
-  border: 1px solid ;
+  border: 1px solid;
   border-radius: 4px;
   box-sizing: border-box;
-
-}
-
-input[type="text"]{
-border-color: hsl(248, 32%, 49%);
-}
-input[type="text"]:checked{
   border-color: hsl(248, 32%, 49%);
 }
-input[type="submit"]{
+
+input[type="submit"] {
   background-color: hsl(154, 59%, 51%);
   border-color: hsl(154, 59%, 51%);
+  letter-spacing: 2px;
   color: white;
-;
+  box-shadow: 0 4px hsl(154, 59%, 40%);
+  margin-bottom: 20px;
 }
-input[type="submit"]:hover{
-  filter:brightness(130%);
-  color: #a2a2a2;
+
+input[type="submit"]:hover {
+  filter: brightness(110%);
+  color: hsl(249, 10%, 26%);
 }
-input[type="email"]{
-border-color: hsl(248, 32%, 49%);
+
+.form a {
+  color: hsl(0, 100%, 74%);
+  font-size: 0.1rem
 }
-.form a{
-  color:  hsl(0, 100%, 74%);
-}
-a{
+
+a {
   color: hsl(228, 45%, 44%);
+}
+
+.error {
+  color: hsl(0, 100%, 74%);
+  font-size: 0.05rem;
+  text-align: right;
+  margin-right: 30px;
+}
+
+.err-icon {
+  background: url(images/icon-error.svg) no-repeat scroll 5px 5px;
+  background-position: right;
+  border-color: hsl(0, 100%, 74%);
+}
+
+// Mobile
+@media (max-width: 375px) {
+  .main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mobile {
+    display: block;
+    width: 100%;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .form-container {
+    width: 80%
+  }
+
+  .description {
+    text-align: center;
+    width: 80%;
+  }
 }
