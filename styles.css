@@ -45,7 +45,7 @@ em {
   line-height: 2;
 }
 
-.terms {
+.services {
   color: hsl(246, 25%, 77%);
   font-weight: lighter;
   font-size: 0.1rem;
@@ -73,10 +73,10 @@ em {
   box-shadow: 0 6px rgba(62, 60, 73, 0.3);
 }
 
-input {
+.inputs {
   width: 90%;
   padding: 12px 20px;
-  margin-top: 8px;
+  margin-top: 12px;
   display: inline-block;
   border: 1px solid;
   border-radius: 4px;
@@ -84,16 +84,17 @@ input {
   border-color: hsl(248, 32%, 49%);
 }
 
-input[type="submit"] {
+
+button {
   background-color: hsl(154, 59%, 51%);
-  border-color: hsl(154, 59%, 51%);
+  border-color: hsl(154, 59%, 51%)!important;
   letter-spacing: 2px;
   color: white;
   box-shadow: 0 4px hsl(154, 59%, 40%);
   margin-bottom: 20px;
 }
 
-input[type="submit"]:hover {
+button:hover {
   filter: brightness(110%);
   color: hsl(249, 10%, 26%);
 }
@@ -107,11 +108,14 @@ a {
   color: hsl(228, 45%, 44%);
 }
 
-.error {
+.err{
   color: hsl(0, 100%, 74%);
   font-size: 0.05rem;
   text-align: right;
   margin-right: 30px;
+}
+.err-off  {
+  display: none;
 }
 
 .err-icon {
@@ -120,7 +124,7 @@ a {
   border-color: hsl(0, 100%, 74%);
 }
 
-// Mobile
+
 @media (max-width: 375px) {
   .main {
     flex-direction: column;

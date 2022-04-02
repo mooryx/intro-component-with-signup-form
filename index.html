@@ -13,58 +13,66 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Intro component with sign up form</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+
 </head>
 
 <body>
   <img src="images/bg-intro-desktop.png" class="bg-img desktop" alt="">
-  <img  src="images/bg-intro-mobile.png" class="bg-img mobile" alt="">
+  <img src="images/bg-intro-mobile.png" class="bg-img mobile" alt="">
   <div class="main">
 
 
-<div class="description">
-  <h1>Learn to code by watching others</h1>
+    <div class="description">
 
-  <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
-    but understanding how developers think is invaluable. </p>
+      <h1>Learn to code by watching others</h1>
+      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+        but understanding how developers think is invaluable. </p>
 
-</div>
-<div class="form-container">
-  <div class="form-header">
-    <h5><em>Try it free 7 days</em> then $20/mo. thereafter</h5>
+    </div>
 
+    <div class="form-container">
+
+      <div class="form-header">
+        <h5><em>Try it free 7 days</em> then $20/mo. thereafter</h5>
+      </div>
+
+
+      <div class="form">
+        <form class="" action="index.html" method="post">
+          <input type="text" class="inputs" name="fname" value="" placeholder="First Name">
+          <p class="err-off err" id='0'>First Name Cannot be Empty</p>
+
+          <input type="text" class="inputs" name="lname" value="" placeholder="Last Name">
+          <p class="err-off err" id='1'>Last Name Cannot be Empty</p>
+          <input type="email" class="inputs" name="email" value="" placeholder="Email Address">
+          <p class="err-off err" id="2">Invalid Email</p>
+
+          <input type="text" class="inputs" name="pass" value="" placeholder="Password">
+          <p class="err-off err" id="3">Password Cannot be Empty</p>
+
+          <button type="button" class="inputs" onclick="check()" name="button">CLAIM YOUR FREE TRIAL</button>
+
+
+
+        </form>
+
+        <p class="services">By clicking the button, you are agreeing to our </p>
+        <p><a href="">Terms and Services</a></p>
+      </div>
+    </div>
   </div>
 
-
-<div class="form">
-    <form class="" action="index.html" method="post">
-      <input type="text"class="" name="fname" value="" placeholder="First Name">
-      <p  class="error ">First Name Cannot be Empty</p>
-
-      <input type="text"  class=""name="lname" value="" placeholder="Last Name">
-      <p class="error" >Last Name Cannot be Empty</p
-        >
-      <input type="email" class="" name="email" value="" placeholder="Email Address">
-      <p  class="error" >Invalid Email</p>
-
-      <input type="text"class="" name="pass" value=""  placeholder="Password">
-      <p  class="error" >Password Cannot be Empty</p>
-
-      <input type="submit"class="" name="submit" value="CLAIM YOUR FREE TRIAL">
-
-    </form>
-
-  <p class="terms">By clicking the button, you are agreeing to our </p>
-  <p><a href="">Terms and Services</a></p>
-  </div>
-  </div>
-  </div>
 </body>
 <footer>
   <p class="attribution">
 
     Challenge by <a class="attribution" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a class="attribution" href="#">Morteza Askari</a>.
+    Coded by <a class="attribution" href="#">Morteza</a>.
   </p>
 </footer>
+<script type="text/javascript" src="scripts.js">
+
+</script>
+
 </html>
